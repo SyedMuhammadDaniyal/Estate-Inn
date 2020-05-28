@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <img id="logo" src="logo.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <span class="navbar-text">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about1">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Find Property
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="rent.html">Rent</a>
+                            <a class="dropdown-item" href="sale.html">Sale</a>
+                            <a class="dropdown-item" href="commercial.html">Commercial</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </span>
+        </div>
+    </nav>
+
+
+    <!-- scroll to top -->
+
+    <button onclick="topFunction()" id="myBtn"><img src="back.png" alt=""></button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
+    <!-- contact Us -->
+    <div id="contact_page">
+        <p id="contact" class="text-center pt-4">Where To Find Us</p>
+        <div class="text-center mt-5 mb-5"><iframe id="iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.14703495381212!2d67.08987703244757!3d24.920056758150338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f3393a34eb9%3A0x41b14629f286cfa2!2sA%20137%2C%20Block%205%20Gulshan-e-Iqbal%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2075300%2C%20Pakistan!5e0!3m2!1sen!2s!4v1589747088728!5m2!1sen!2s"
+                width="" height="" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe></div>
+        <div class=" pb-5">
+            <div>
+                <p id="contact" class="text-center pb-4">Connect Us At</p>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a id="contact_connect" href="https://www.facebook.com/Estate-Inn-101397761603518/?modal=admin_todo_tour">
+                        <div id="connect_us" class="d-flex align-items-center">
+                            <div class="m-auto text-center">
+                                <img id="connect" src="facebook.png" alt="facebook">
+                                <p>Facebook</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="contact_connect" href="https://mail.google.com/mail/?view=cm&fs=1&to=naveedzaidisyed123@gmail.com">
+                        <div id="connect_us" class="d-flex align-items-center">
+                            <div class="m-auto text-center">
+                                <img id="connect" src="gmail.png" alt="whatsaap">
+                                <p>Gmail</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="contact_connect" href="https://api.whatsapp.com/send?phone=923343306671&text=&source=&data=&app_absent=">
+                        <div id="connect_us" class="d-flex align-items-center">
+
+                            <div class="m-auto text-center">
+                                <img id="connect" src="whatsaap.png" alt="gmail">
+                                <p>Whatsaap</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer" class="d-flex flex-wrap justify-content-center pb-4 pt-3">
+        <div id="col1">
+            <p id="col1txt" class="pt-4">Address,</p>
+            <p id="col1txt">House No.A-137, Block-5,<br>Rab-Medical, Gulshan-e-Iqbal, Karachi</p>
+            <p id="col1txt"><img id="footericon1" src="callicon.png" alt="call"> +92334-3306671</p>
+            <p id="col1txt"><img id="footericon1" src="callicon.png" alt="call"> +92334-2846228</p>
+            <p id="col1txt"><img id="footericon1" src="messageicon.png" alt="gmail">naveedzaidisyed123@gmail.com</p>
+        </div>
+        <div id="col2">
+            <p id="col2txt" class="pt-4">Connect With Us</p>
+            <a href="https://www.facebook.com/Estate-Inn-101397761603518/?modal=admin_todo_tour"><img id="footericon"
+                    src="facebook.png" alt="facebook"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=naveedzaidisyed123@gmail.com"><img id="footericon"
+                    src="gmail.png" alt="gmail"></a>
+            <a href="https://api.whatsapp.com/send?phone=923343306671&text=&source=&data=&app_absent="><img
+                    id="footericon" src="whatsaap.png" alt="whatsaap"></a>
+        </div>
+    </footer>
+
+
+    <!-- developer -->
+    <div id="developer" class="pt-2 text-center">
+        Developed by Syed Muhammad Daniyal
+    </div>
+</body>
+
+</html>

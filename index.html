@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <script>
+        function btn_click() {
+            top.style.marginTop = "-200px";
+        }
+    </script>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <img id="logo" src="logo.png" alt="">
+        <button id="burger_btn" class="navbar-toggler" onclick="btn_click()" type="button" data-toggle="collapse"
+            data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="bars.png" alt=""></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <span class="navbar-text">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about1">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Find Property
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="rent.html">Rent</a>
+                            <a class="dropdown-item" href="sale.html">Sale</a>
+                            <a class="dropdown-item" href="commercial.html">Commercial</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </span>
+        </div>
+    </nav>
+
+
+    <!-- scroll to top -->
+
+    <button onclick="topFunction()" id="myBtn"><img src="back.png" alt=""></button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
+
+    <!-- Home Image -->
+    <div id="top" class="d-flex flex-wrap justify-content-center align-items-center">
+        <div id="pictext">
+            <p id="p1">FIND YOUR DESIRED HOME</p>
+            <p id="p2" class="text-justify">Our estate provides a fine dealing with customers because we know that the
+                existance of agents does not, however,
+                require a whole new torts or contracts. Our deal is not a deal actually it's a care for you.</p>
+        </div>
+        <div id="picagent">
+            <p id="picagent1">CONTACT AN AGENT</p>
+            <p id="picagent2">+92334-3306671</p>
+            <p id="picagent2">+92334-2846228</p>
+
+        </div>
+    </div>
+
+
+    <!-- What you find -->
+    <div id="what_find" class="pt-4 pb-5">
+        <p id="you_find" class="text-center pt-3 pb-3">What You Find Here</p>
+        <a id="linktop1" href="commercial.html">
+            <div class="d-flex flex-wrap justify-content-center align-items-end">
+                <div id="top1" class="d-flex align-items-center">
+                    <div class="m-auto text-center">
+                        <img id="top1img" src="commercial.png" alt="commercial">
+                        <p>COMMERCIAL PROPERTY</p>
+                    </div>
+                </div>
+        </a>
+        <a id="linktop1" href="rent.html">
+            <div id="top1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img id="top1img" src="rent.png" alt="rent">
+                    <p class="text-center">PROPERTY FOR RENT</p>
+                </div>
+            </div>
+        </a>
+        <a id="linktop1" href="sale.html">
+            <div id="top1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img id="top1img" src="sale.png" alt="rent">
+                    <p class="text-center">PROPERTY FOR SALE</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    </div>
+
+    <!-- Our work places -->
+    <div id="work">
+        <p id="work_text" class="text-center">Where We Work?</p>
+        <div id="work_places" class="d-flex flex-wrap justify-content-around">
+
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>Gulshan-e-Iqbal</p>
+                </div>
+            </div>
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>Gulistan-e-Johar</p>
+                </div>
+            </div>
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>F.B Area</p>
+                </div>
+            </div>
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>North Karachi</p>
+                </div>
+            </div>
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>Nazimabad</p>
+                </div>
+            </div>
+
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>Clifton</p>
+                </div>
+            </div>
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>D.H.A</p>
+                </div>
+            </div>
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>Scheme 33</p>
+                </div>
+            </div>
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>Scheme 45</p>
+                </div>
+            </div>
+            <div id="work_places1" class="d-flex align-items-center">
+                <div class="m-auto text-center">
+                    <img src="map_marker.png" alt="map_marker">
+                    <p>Bahria Town</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- About us -->
+    <div id="about_associated" class="d-flex flex-wrap justify-content-center">
+        <div id="about_us">
+            <P id="about1" class="text-center">About Us</P>
+            <p id="about2" class="text-justify p-4">Estate inn is associated with OLX.PK, Zameen.com & The newspapers
+                (The Jung & Dawn). The estate inn was started in 2019 but our dealings are more like than 20 years with
+                believe of fair dealings. Today, we are having direct clients as well with in highly satisfied manner.
+                Delivering Online Services are no doubt the future of every marketplace, that's why we also provide
+                online services. We have always strived to work hard to develop the image of our estate. We have some
+                specific work towns but our dealing is always honest</p>
+        </div>
+
+        <div id="associated">
+            <p class="text-center pb-4">Associated With</p>
+            <marquee class="pb-4" behavior="" direction="left">
+                <img id="associated_img" src="olx.jpg" alt="olx">
+                <img id="associated_img" src="zameen.png" alt="zameen.com">
+                <img id="associated_img" src="dawn.jpeg" alt="dawn">
+                <img id="associated_img" src="olx.jpg" alt="olx">
+                <img id="associated_img" src="zameen.png" alt="zameen.com">
+                <img id="associated_img" src="dawn.jpeg" alt="dawn">
+            </marquee>
+        </div>
+
+
+    </div>
+
+
+
+    <footer id="footer" class="d-flex flex-wrap justify-content-center pb-4 pt-3">
+        <div id="col1">
+            <p id="col1txt" class="pt-4">Address,</p>
+            <p id="col1txt">House No.A-137, Block-5,<br>Rab-Medical, Gulshan-e-Iqbal, Karachi</p>
+            <p id="col1txt"><img id="footericon1" src="callicon.png" alt="call"> +92334-3306671</p>
+            <p id="col1txt"><img id="footericon1" src="callicon.png" alt="call"> +92334-2846228</p>
+            <p id="col1txt"><img id="footericon1" src="messageicon.png" alt="gmail">naveedzaidisyed123@gmail.com</p>
+        </div>
+        <div id="col2">
+            <p id="col2txt" class="pt-4">Connect With Us</p>
+            <a href="https://www.facebook.com/Estate-Inn-101397761603518/?modal=admin_todo_tour"><img id="footericon" src="facebook.png"
+                    alt="facebook"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=naveedzaidisyed123@gmail.com"><img id="footericon"
+                    src="gmail.png" alt="gmail"></a>
+            <a href="https://api.whatsapp.com/send?phone=923343306671&text=&source=&data=&app_absent="><img
+                    id="footericon" src="whatsaap.png" alt="whatsaap"></a>
+        </div>
+    </footer>
+
+    <!-- developer -->
+    <div id="developer" class="pt-2 text-center">
+        Developed by Syed Muhammad Daniyal
+    </div>
+
+</body>
+
+</html>

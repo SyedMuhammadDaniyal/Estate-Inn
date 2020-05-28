@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <img id="logo" src="logo.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <span class="navbar-text">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about1">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Find Property
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="rent.html">Rent</a>
+                        <a class="dropdown-item" href="sale.html">Sale</a>
+                        <a class="dropdown-item" href="commercial.html">Commercial</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                
+            </ul>
+          </span>
+        </div>
+      </nav>
+
+
+<!-- scroll to top -->
+
+<button onclick="topFunction()" id="myBtn"><img src="back.png" alt=""></button>
+<script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+
+
+
+<!-- Ads -->
+
+<div>
+    <div id="search_div" class="m-auto text-center">
+        <input type="text" id="my_input" class="ml-2 mr-2 mt-3 pl-3 pb-2" placeholder="amount">
+        <input type="text" id="my_input1" class="ml-2 mr-2 mt-2 pl-3 pb-2" placeholder="area">
+        <input type="text" id="my_input2" class="ml-2 mr-2 mt-2 pl-3 pb-2" placeholder="location">
+        <button onclick="searchFunction()" id="search_btn" class="ml-2 mr-2 mt-2 pb-1">Search</button>
+    </div>
+
+    <div id="box_div" class="d-flex flex-wrap justify-content-center">
+
+
+        <div class="box">
+            <div>
+                <img id="box_img" src="house.jpg" alt="house">
+            </div>
+            <div>
+
+                <p class="rent">Commercial Portion For Rent</p>
+                <p class="price">80000 PKR</p>
+                <p class="address">Block-1, Gulshan-e-Iqbal, Karachi.</p>
+                <p id="properties" class="pl-3">Ground floor, 3 bed, d/d, 60ft road, good location, syleant commercial.</p>
+                <p id="area" class="pl-3">Area: <span class="area1">240</span> sq yards</p>
+                <p id="contact1">Contact: +92334-3306671</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div>
+                <img id="box_img" src="house.jpg" alt="house">
+            </div>
+            <div>
+
+                <p class="rent">Commercial House For Rent</p>
+                <p class="price">25000 PKR</p>
+                <p class="address">Block-5, Gulshan-e-Iqbal, Karachi.</p>
+                <p id="properties" class="pl-3">Ground floor, 3 bed, d/d, 60ft road, good location, syleant commercial.</p>
+                <p id="area" class="pl-3">Area: <span class="area1">240</span> sq yards</p>
+                <p id="contact1">Contact: +92334-3306671</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div>
+                <img id="box_img" src="house.jpg" alt="house">
+            </div>
+            <div>
+
+                <p class="rent">Commercial Portion For Rent</p>
+                <p class="price">80000 PKR</p>
+                <p class="address">Block-1, Gulshan-e-Iqbal, Karachi.</p>
+                <p id="properties" class="pl-3">Ground floor, 3 bed, d/d, 60ft road, good location, syleant commercial.</p>
+                <p id="area" class="pl-3">Area: <span class="area1">240</span> sq yards</p>
+                <p id="contact1">Contact: +92334-3306671</p>
+            </div>
+        </div>
+</div>
+
+
+<script>
+    function searchFunction() {
+        let mainDivs = document.getElementsByClassName("box");
+        let area_input = parseInt(document.getElementById("my_input1").value);
+        let area1 = document.getElementsByClassName("area1");
+        let search = parseInt(document.getElementById("my_input").value);
+        let amountsList = document.getElementsByClassName("price");
+        let location_search = document.getElementById("my_input2").value.toUpperCase();
+        let location_list = document.getElementsByClassName("address"); 
+        for (var i = 0; i < amountsList.length; i++) {
+            let amount_in_tag = amountsList[i];
+            let amount = parseInt(amount_in_tag.textContent || amount_in_tag.innerHTML);
+            let area_in_tag = area1[i];
+            let area2 = parseInt(area_in_tag.textContent || area_in_tag.innerHTML);
+            let location_in_tag = location_list[i];
+            let location1 = location_in_tag.textContent.toUpperCase() || location_in_tag.innerHTML.toUpperCase();
+            // for all three search bars
+            if ((amount <= search) && (area2 <= area_input) && (location1.indexOf(location_search) > -1)) {
+                mainDivs[i].style.display = "";
+            }
+            // amount search
+            else if ((amount <= search) && (!(area2 <= area_input)) && (!(area2 > area_input)) && (!(location1.indexOf("") > -1))) {
+                mainDivs[i].style.display = "";
+            }
+            // area search
+            else if ((area2 <= area_input) && (!(amount <= search)) && (!(amount > search)) && (!(location1.indexOf("") > -1))){
+                mainDivs[i].style.display = "";
+            }
+            // location search
+            else if((location1.indexOf(location_search) > -1) && (!(area2 <= area_input)) && (!(area2 > area_input)) && (!(amount <= search)) && (!(amount > search))){
+                mainDivs[i].style.display = "";
+            }
+            //  location and amount search
+            else if((location1.indexOf(location_search) > -1) && (amount <= search) && (!(area2 <= area_input)) && (!(area2 > area_input))){
+                mainDivs[i].style.display="";
+            }
+            // location and area
+            else if((location1.indexOf(location_search) > -1) && (area2 <= area_input) && (!(amount <= search)) && (!(amount > search))){
+                mainDivs[i].style.display = "";
+            }
+            // if amount area and location will be empty
+            else if((!(amount <= search)) && (!(amount > search)) && (!(area2 <= area_input)) && (!(area2 > area_input)) && (!(location1.indexOf("") > -1))){
+                mainDivs[i].style.display = "";
+            }
+            // when all conditoins will be false
+            else {
+                mainDivs[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+<footer id="footer" class="d-flex flex-wrap justify-content-center pb-4 pt-3">
+    <div id="col1">
+        <p id="col1txt" class="pt-4">Address,</p>
+        <p id="col1txt">House No.A-137, Block-5,<br>Rab-Medical, Gulshan-e-Iqbal, Karachi</p>
+        <p id="col1txt"><img id="footericon1" src="callicon.png" alt="call"> +92334-3306671</p>
+        <p id="col1txt"><img id="footericon1" src="callicon.png" alt="call"> +92334-2846228</p>
+        <p id="col1txt"><img id="footericon1" src="messageicon.png" alt="gmail">naveedzaidisyed123@gmail.com</p>
+    </div>
+    <div id="col2">
+        <p id="col2txt" class="pt-4">Connect With Us</p>
+        <a href="https://www.facebook.com/Estate-Inn-101397761603518/?modal=admin_todo_tour"><img id="footericon" src="facebook.png"
+                alt="facebook"></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=naveedzaidisyed123@gmail.com"><img id="footericon"
+                src="gmail.png" alt="gmail"></a>
+        <a href="https://api.whatsapp.com/send?phone=923343306671&text=&source=&data=&app_absent="><img
+                id="footericon" src="whatsaap.png" alt="whatsaap"></a>
+    </div>
+</footer>
+
+ <!-- developer -->
+ <div id="developer" class="pt-2 text-center">
+    Developed by Syed Muhammad Daniyal
+</div>
+
+</body>
+
+</html>
