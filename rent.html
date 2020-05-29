@@ -256,43 +256,36 @@
                         if ((amount <= search) && (area2 <= area_input) && (location1.indexOf(location_search) > -1)) {
                             mainDivs[i].style.display = "";
                             list.push(1);
-                            alert(7)
                         }
                         else if ((amount <= search) && (!(area2 <= area_input)) && (!(area2 > area_input)) && (!(location1.indexOf("") > -1))) {
                             mainDivs[i].style.display = "";
                             list.push(1);
-                            alert(6)
                         }
                         else if ((area2 <= area_input) && (!(amount <= search)) && (!(amount > search)) && (!(location1.indexOf("") > -1))){
                             mainDivs[i].style.display = "";
                             list.push(1);
-                            alert(5)
                         }
                         else if((location1.indexOf(location_search) > -1) && (!(area2 <= area_input)) && (!(area2 > area_input)) && (!(amount <= search)) && (!(amount > search))){
                             mainDivs[i].style.display = "";
                             list.push(1);
-                            alert(4)
                         }
                         else if((location1.indexOf(location_search) > -1) && (amount <= search) && (!(area2 <= area_input)) && (!(area2 > area_input))){
                             mainDivs[i].style.display="";
                             list.push(1);
-                            alert(3)
                         }
                         else if((location1.indexOf(location_search) > -1) && (area2 <= area_input) && (!(amount <= search)) && (!(amount > search))){
                             mainDivs[i].style.display = "";
                             list.push(1);
-                            alert(2)
                         }
                         else if((!(amount <= search)) && (!(amount > search)) && (!(area2 <= area_input)) && (!(area2 > area_input)) && (!(location1.indexOf("") > -1))){
                             mainDivs[i].style.display = "";
                             list.push(1);
-                            alert(1)
                         }
                         else {
                             mainDivs[i].style.display = "none";
                         }
                     }
-                    if (list.length === 0){
+                    if (list.length == 0){
                         no_result.style.display = "";
                     }
                 }
