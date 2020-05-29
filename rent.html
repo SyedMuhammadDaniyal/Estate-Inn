@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estate Inn</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -244,6 +244,8 @@
                     let amountsList = document.getElementsByClassName("price");
                     let location_search = document.getElementById("my_input2").value.toUpperCase();
                     let location_list = document.getElementsByClassName("address"); 
+                    // Making an array
+                    var list = [];
                     for (var i = 0; i < amountsList.length; i++) {
                         let amount_in_tag = amountsList[i];
                         let amount = parseInt(amount_in_tag.textContent || amount_in_tag.innerHTML);
@@ -253,29 +255,45 @@
                         let location1 = location_in_tag.textContent.toUpperCase() || location_in_tag.innerHTML.toUpperCase();
                         if ((amount <= search) && (area2 <= area_input) && (location1.indexOf(location_search) > -1)) {
                             mainDivs[i].style.display = "";
+                            list.push(1);
+                            alert(7)
                         }
                         else if ((amount <= search) && (!(area2 <= area_input)) && (!(area2 > area_input)) && (!(location1.indexOf("") > -1))) {
                             mainDivs[i].style.display = "";
+                            list.push(1);
+                            alert(6)
                         }
                         else if ((area2 <= area_input) && (!(amount <= search)) && (!(amount > search)) && (!(location1.indexOf("") > -1))){
                             mainDivs[i].style.display = "";
+                            list.push(1);
+                            alert(5)
                         }
                         else if((location1.indexOf(location_search) > -1) && (!(area2 <= area_input)) && (!(area2 > area_input)) && (!(amount <= search)) && (!(amount > search))){
                             mainDivs[i].style.display = "";
+                            list.push(1);
+                            alert(4)
                         }
                         else if((location1.indexOf(location_search) > -1) && (amount <= search) && (!(area2 <= area_input)) && (!(area2 > area_input))){
                             mainDivs[i].style.display="";
+                            list.push(1);
+                            alert(3)
                         }
                         else if((location1.indexOf(location_search) > -1) && (area2 <= area_input) && (!(amount <= search)) && (!(amount > search))){
                             mainDivs[i].style.display = "";
+                            list.push(1);
+                            alert(2)
                         }
                         else if((!(amount <= search)) && (!(amount > search)) && (!(area2 <= area_input)) && (!(area2 > area_input)) && (!(location1.indexOf("") > -1))){
                             mainDivs[i].style.display = "";
+                            list.push(1);
+                            alert(1)
                         }
                         else {
                             mainDivs[i].style.display = "none";
-                            no_result.style.display = "";
                         }
+                    }
+                    if (list.length === 0){
+                        no_result.style.display = "";
                     }
                 }
             </script>
